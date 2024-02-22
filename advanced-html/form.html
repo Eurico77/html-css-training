@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+
+  <body>
+    <h1>Tipos de Formulários</h1>
+    <form>
+      <div>
+        <label for="fullName">Nome</label>
+        <input
+          id="fullName"
+          name="fullName"
+          type="text"
+          placeholder="Digite seu nome"
+        />
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" minlength="6" />
+      </div>
+      <div>
+        <label for="date">Data de nascimento</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <div>
+        <label>Gênero</label>
+        <div>
+          <input id="male" name="gender" type="radio" value="masculino" />
+          <label for="male">Masculino</label>
+        </div>
+        <div>
+          <input id="female" name="gender" type="radio" value="feminino" />
+          <label for="female">Feminino</label>
+        </div>
+        <div>
+          <input id="outher" name="gender" type="radio" value="outro" />
+          <label for="outher">Outro</label>
+        </div>
+      </div>
+      <div>
+        <label>Pet</label>
+        <div>
+          <div>
+            <input id="dog" type="checkbox" value="dog" />
+            <label for="dog">Cachorro</label>
+          </div>
+          <div>
+            <input id="cat" type="checkbox" value="dog" />
+            <label for="cat">Gato</label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <label>Carros</label>
+        <div>
+          <select name="car" draggable="true">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div>
+          <label>Sobre mim</label>
+          <div>
+            <textarea name="aboutMe"></textarea>
+          </div>
+        </div>
+        <div>
+          <input type="submit" value="Finalizar" />
+          <input type="reset" value="Limpar" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
