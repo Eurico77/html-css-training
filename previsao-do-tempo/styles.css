@@ -21,19 +21,6 @@ body {
   height: 100vh;
 }
 
-@media (max-width: 768px) {
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-
-  .app-container .app-container-box-left header {
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-}
-
 .app-container .app-container-box-left header {
   display: flex;
   justify-content: center;
@@ -62,7 +49,6 @@ input[type="text"]::placeholder {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  width: 800px;
 }
 
 .app-container-box-left-main .app-container-box-left-main-content {
@@ -259,9 +245,65 @@ input[type="text"]::placeholder {
   p:nth-child(2) {
   color: #1e213a83;
 }
-/* .app-container-box-rigth
-  .app-container-box-left-asside-content-items
-  .app-container-box-left-asside-content-item
-  p {
-  padding: 8px;
-} */
+
+@media (max-width: 768px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-container .app-container-box-left header {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: start;
+  }
+  .app-container-box-left-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .app-container-box-left-main .app-container-box-left-main-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .app-container-box-left-items {
+    flex-wrap: wrap;
+  }
+  .app-container-box-left-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  input[type="text"] {
+    width: 21.25rem;
+    height: 3.4375rem;
+  }
+
+  .app-container-box-left-main img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .app-container-box-left-main .app-container-box-left-main-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .app-container-box-left-main .app-container-box-left-main-content p {
+    font-size: 1rem;
+  }
+
+  .app-container-box-left-main .app-container-box-left-main-content strong {
+    font-size: 4.3125rem;
+  }
+
+  .app-container-box-rigth .app-container-box-left-asside-content-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
